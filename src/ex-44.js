@@ -6,7 +6,7 @@ import { question } from 'readline-sync';
 
 const fnum = question('파티에 몇 명을 초대 하겠습니까?');
 if (fnum < 10) {
-  for (let i = 1; i <= fnum; i++) {
+  for (let i = 0; i < fnum; i++) {
     const fname = question('이름을 입력해주세요.');
     console.log(`${fname} has been invited`);
   }

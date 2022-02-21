@@ -4,5 +4,9 @@
 import { question } from 'readline-sync';
 
 const fnumber1 = question('500 이상의 정수를 입력해주세요.');
-const fnumber2 = Math.sqrt(Number(fnumber1)); // 제곱근
-console.log(fnumber2.toFixed(2)); // 소수점 2자리숫자까지 표기
+if (fnumber1 >= 500 && fnumber1 % 1 === 0) {
+  const fnumber2 = Math.sqrt(Number(fnumber1)); // 제곱근
+  console.log(fnumber2.toFixed(2)); // 소수점 2자리숫자까지 표기
+} else {
+  console.log('error');
+}

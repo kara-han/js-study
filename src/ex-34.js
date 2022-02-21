@@ -11,12 +11,12 @@ import { question } from 'readline-sync';
 const fselect = question('1 OR 2를 입력해주세요.');
 if (Number(fselect) === 1) {
   const fsnumber1 = question('사각형 한면의 길이를 입력해주세요.');
-  const fsnumber2 = fsnumber1 * fsnumber1;
+  const fsnumber2 = Number(fsnumber1) * Number(fsnumber1);
   console.log(`사격형의 넓이는 ${fsnumber2} 입니다.`);
 } else if (Number(fselect) === 2) {
   const ftnumber1 = question('삼각형의 밑변을 입력해주세요.');
   const ftnumber2 = question('삼각형의 높이를 입력해주세요.');
-  const ftnumber3 = (ftnumber1 * ftnumber2) / 2;
+  const ftnumber3 = (Number(ftnumber1) * Number(ftnumber2)) / 2;
   console.log(`삼각형의 넓이는 ${ftnumber3} 입니다.`);
 } else {
   console.log('오류!');

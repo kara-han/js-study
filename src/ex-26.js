@@ -8,6 +8,7 @@ if (
   ftextfirst === 'a' ||
   ftextfirst === 'i' ||
   ftextfirst === 'o' ||
+  ftextfirst === 'e' ||
   ftextfirst === 'u'
 ) {
   console.log(ftextLower + 'way'); // 첫글자가 모음일경우

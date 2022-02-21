@@ -3,10 +3,13 @@
 import { question } from 'readline-sync';
 
 const fnum = question('50 미만의 숫자를 입력해주세요.');
-
-for (let i = 50; i > 0; i--) {
-  console.log(i);
-  if (Number(fnum) === i) {
-    break;
+if (fnum < 50) {
+  for (let i = 50; i > 0; i--) {
+    console.log(i);
+    if (Number(fnum) === i) {
+      break;
+    }
   }
+} else {
+  console.log('error');
 }

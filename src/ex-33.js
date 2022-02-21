@@ -7,7 +7,7 @@ import { question } from 'readline-sync';
 const fnumber1 = question('숫자1를 입력해주세요.');
 const fnumber2 = question('숫자2를 입력해주세요.');
 const fnumber3 = Math.floor(fnumber1 / fnumber2); // 나눗셈 몫 정수만 출력
-const fnumber4 = fnumber1 % fnumber2; // 나눗셈 나머지
+const fnumber4 = Number(fnumber1) % Number(fnumber2); // 나눗셈 나머지
 console.log(
   `${fnumber1} divided by ${fnumber2} is ${fnumber3} with ${fnumber4} remaining`
 );

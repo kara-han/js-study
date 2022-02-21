@@ -7,7 +7,7 @@ import { question } from 'readline-sync';
 const fselect = question('카운트 방향(up OR down)을 입력해주세요.');
 if (fselect === 'up') {
   const fnum = question('가장 큰 숫자를 입력해주세요.');
-  for (let i = 1; i <= fnum; i++) {
+  for (let i = 0; i < fnum; i++) {
     console.log(i);
   }
 } else if (fselect === 'down') {

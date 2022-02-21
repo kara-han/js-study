@@ -2,7 +2,10 @@
 import { question } from 'readline-sync';
 
 const fnum = question('1부터 12 사이의 값을 입력해주세요.');
-
-for (let i = 1; i <= 12; i++) {
-  console.log(`${fnum} * ${i} = ${fnum * i}`);
+if (fnum >= 1 && fnum <= 12) {
+  for (let i = 1; i <= 12; i++) {
+    console.log(`${fnum} * ${i} = ${fnum * i}`);
+  }
+} else {
+  console.log('error');
 }
