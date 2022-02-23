@@ -10,5 +10,7 @@ if (fnum < 10) {
     console.log(fname);
   }
 } else {
-  console.log('Too high');
+  for (let i = 0; i < 3; i++) {
+    console.log('Too high');
+  }
 }
