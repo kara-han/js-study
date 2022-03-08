@@ -1,0 +1,32 @@
+<!--삼각형을 그려라.-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex. 61</title>
+  </head>
+  <body>
+    <!-- 그림이 그려질 영역 -->
+    <canvas id="real-turtle"></canvas>
+    <script src="https://unpkg.com/real-turtle"></script>
+    <script src="https://unpkg.com/real-turtle/build/helpers/simple.js"></script>
+    <script>
+      // 삼각형을 그려라.
+      // .forward(steps) 거북이를 앞으로 움직이게 한다. steps: 숫자: 거북이가 이동해야 하는 거리(px)
+      // .left(degrees) 거북이를 우회전(시계 반대 방향)하게 만듭니다. degrees: 숫자: 거북이가 회전해야 하는 각도(도)
+      // .right(degrees) 거북이를 우회전(시계 방향)하게 만듭니다. degrees: 숫자: 거북이가 회전해야 하는 각도(도)
+      /* turtle
+        .right(90)
+        .forward(100)
+        .left(120)
+        .forward(100)
+        .left(120)
+        .forward(100); */
+      for (let i=0; i<3; i++) {  
+        turtle.right(120).forward(100);
+      }  
+    </script>
+  </body>
+</html>

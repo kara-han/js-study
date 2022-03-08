@@ -1,0 +1,27 @@
+<!--원을 그려라.-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex. 62</title>
+  </head>
+  <body>
+    <!-- 그림이 그려질 영역 -->
+    <canvas id="real-turtle"></canvas>
+    <script src="https://unpkg.com/real-turtle"></script>
+    <script src="https://unpkg.com/real-turtle/build/helpers/simple.js"></script>
+    <script>
+      // 원을 그려라.
+      // .arc(radius, angle, counterclockwise) 거북이가 호를 따라 움직이게 만듭니다.
+      // - radius: 숫자: 거북이가 따라야 하는 호의 반경 
+      // - angle: 숫자: 호의 각도(도). 호의 " 길이"를 정의합니다 
+      // - counterclockwise(선택 사항): 부울: 호의 방향(왼쪽 또는 오른쪽)을 정의합니다. 기본값:false
+      turtle
+      .arc(100, 120, false)
+      .arc(100, 120, false)
+      .arc(100, 120, false);
+    </script>
+  </body>
+</html>
