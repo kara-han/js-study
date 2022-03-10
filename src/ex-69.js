@@ -4,17 +4,11 @@
 // https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf
 import { question } from 'readline-sync';
 
-let countrynum = -1; // 국가 목록 번호
 const country = ['korea', 'japan', 'china', 'usa', 'france']; // Country[0] 배열 0~4
 console.log(`국가 목록 : ${country}`);
+
 const usercountry = question('목록의 국가 이름들 중 하나를 입력해주세요.');
-// 유저가 입력한 국가 이름이 국가목록에 있는지 확인
-/* for (const [i, element] of country.entries()) {
-  if (element === usercountry.toLowerCase()) {
-    countrynum = i;
-  }
-} */
-countrynum = country.indexOf(usercountry.toLowerCase()); // 유저가 입력한 국가 위치 -1이면 없음
+const countrynum = country.indexOf(usercountry.toLowerCase()); // 유저가 입력한 국가 위치 -1이면 없음
 
 if (countrynum >= 0) {
   console.log(

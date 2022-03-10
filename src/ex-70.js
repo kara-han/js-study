@@ -2,12 +2,8 @@
 import { question } from 'readline-sync';
 
 const country = ['Korea', 'Japan', 'China', 'USA', 'France']; // Country[0] 배열 0~4
-/* let countrylist = ''; // 유저에게 국가 목록을 보여준다.
-for (const element of country) {
-  countrylist = countrylist + ' ' + element;
-} */
-
 console.log(`국가 목록 : ${country}`);
+
 const usernum = Number(question('0 ~ 4 중 숫자를 입력해주세요.'));
 if (usernum >= 0 && usernum <= 4) {
   console.log(`국가 이름 : ${country[usernum]}`);

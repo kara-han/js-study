@@ -49,6 +49,6 @@ while (partychk === 'y') {
       console.log(`${partyist}`); // 배열 출력
     }
 
-    partychk = 'N'; // 배열에 있는 이름을 중 하나를 입력했을경우 그만
+    partychk = 'n'; // 배열에 있는 이름을 중 하나를 입력했을경우 그만
   }
 }
