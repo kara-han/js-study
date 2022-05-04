@@ -33,3 +33,10 @@ console.log(com3);
 for (const element of com3) {
   console.log(element);
 }
+
+/*
+// foreach보다 for.. of 를 선호 권장 사항
+com3.forEach((value) => {
+  console.log(value);
+});
+*/

@@ -13,4 +13,9 @@ for (let i = 0; i < 4; i++) {
 console.log(array);
 
 const username = question('입력된 이름들 중 하나를  입력해주세요.');
-console.log(array[username]);
+
+if (username in array) {
+  console.log(array[username]);
+} else {
+  console.log('일치하는 내용이 없습니다.');
+}

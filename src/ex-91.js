@@ -7,10 +7,12 @@ import { question } from 'readline-sync';
 
 const comnum = [1, 3, 5, 7, 3];
 console.log(comnum);
-let chknum = 0;
 const usernum = Number(
   question('배열속에 있는 숫자들 중 하나를 입력해주세요.')
 );
+
+// For문으로 확인
+let chknum = 0;
 for (const element of comnum) {
   if (element === usernum) {
     chknum += 1;
@@ -18,3 +20,13 @@ for (const element of comnum) {
 }
 
 console.log(`입력한 숫자는 리스트에 ${chknum} 개 입니다.`);
+
+/*
+// 배열.reduce((누적값, 현잿값, 인덱스, 요소) => { return 결과 }, 초깃값);
+// Disallow Array#reduce() and Array#reduceRight() 권장 규칙 일반적으로 읽기 어렵고 성능 이 떨어지는 코드 가 됩니다.
+const result = comnum.reduce((acc, cur, i) => {
+  console.log(acc, cur, i);
+  return cur === usernum ? acc + 1 : acc;
+}, 0);
+console.log(result);
+*/

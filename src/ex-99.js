@@ -21,5 +21,6 @@ const numchk = question('값을 변경하고 싶나요? (y or n)');
 if (numchk.toLowerCase() === 'y') {
   const usernum3 = Number(question('숫자를 입력해주세요.'));
   array[usernum1][usernum2] = usernum3;
-  console.log(array[usernum1]);
 }
+
+console.log(array[usernum1]);

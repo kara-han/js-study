@@ -15,4 +15,7 @@ while (whilenum < 5) {
   }
 }
 
-console.log(`Thank you ${anum}`);
+console.log(`Thank you`);
+for (const element of anum) {
+  console.log(element);
+}
